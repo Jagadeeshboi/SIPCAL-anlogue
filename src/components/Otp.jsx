@@ -10,7 +10,7 @@ const Otp = () => {
     if (index < 3) inputs.current[index + 1].focus();
   };
   const handleKeyDown = (e, index) => {
-    if (e.key === "Backspace" && otps[index] === "" && index > 0)
+    if (e.key === "Backspace" && index > 0 && otps[index] === "")
       inputs.current[index - 1].focus();
   };
   return (
